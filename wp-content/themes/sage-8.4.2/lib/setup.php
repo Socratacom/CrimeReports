@@ -35,6 +35,7 @@ function setup() {
   // http://codex.wordpress.org/Function_Reference/set_post_thumbnail_size
   // http://codex.wordpress.org/Function_Reference/add_image_size
   add_theme_support('post-thumbnails');
+  set_post_thumbnail_size( 200, 200, array( 'center', 'center')  );
 
   // Enable post formats
   // http://codex.wordpress.org/Post_Formats
@@ -85,6 +86,10 @@ function display_sidebar() {
     // @link https://codex.wordpress.org/Conditional_Tags
     is_404(),
     is_front_page(),
+    is_home(),
+    is_page(),
+    is_archive(),
+    is_single(),
     is_page_template('template-custom.php'),
   ]);
 
@@ -95,7 +100,9 @@ function display_sidebar() {
  * Theme assets
  */
 function assets() {
-  wp_enqueue_style('sage/css', Assets\asset_path('styles/main.css'), false, null);
+  wp_enqueue_style('sage/css', Assets\asset_path('styles/main.css'), false, 1.0);
+  wp_register_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Open+Sans:400,700,300,600', false, null);
+  wp_enqueue_style('google-fonts');
 
   if (is_single() && comments_open() && get_option('thread_comments')) {
     wp_enqueue_script('comment-reply');
