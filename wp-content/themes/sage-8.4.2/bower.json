@@ -7,9 +7,14 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "bootstrap-sass": "3.3.6"
+    "bootstrap-sass": "3.3.6",
+    "matchHeight": "matchheight#^0.7.0",
+    "font-awesome": "fontawesome#^4.6.3"
   },
   "overrides": {
+    "matchHeight": {
+      "main": "./dist/jquery.matchHeight-min.js"
+    },
     "bootstrap-sass": {
       "main": [
         "./assets/stylesheets/_bootstrap.scss",
