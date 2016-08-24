@@ -1,6 +1,5 @@
 .home {
 	.hero {
-		height:600px;
 		position: relative;
 		background-color:$brand;
 		h1 {
@@ -104,7 +103,12 @@
 	}
 }
 
-@media only screen and (min-width : 320px) {
+@media only screen and (min-width : 320px) {	
+	.home {
+		.hero {
+			height:100vh;
+		}
+	}
 	.cta-list {
 		li {
 			display: block;
@@ -140,6 +144,18 @@
 		}
 	}
 }
+
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	.home {
+		.hero {
+			height:600px;
+		}
+	}
+}
+
 @media only screen and (min-width : 1200px) {
 	.hero {
 		h1 {

@@ -64,3 +64,129 @@
 	}
 }
 
+.searchbar {
+	background-color:rgba(white,.15);
+	padding:15px;
+	[role="button"], input[type="submit"], button {
+		background-color: $primary;
+		color:white;
+		border: 0;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		text-transform: uppercase;
+		font-weight: $font-normal;
+		outline: none;
+	}
+	[role="button"]:hover, input[type="submit"]:hover, button:hover {
+		background-color: $primary-dark;
+	}
+	input[type="text"] {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		-webkit-background-clip: padding;
+		-moz-background-clip: padding;
+		background-clip:padding-box;
+		border:none;
+		background-color:#fff;
+		color:#000;
+		outline:0;
+		margin:0;
+		padding:0 15px;
+		text-align: left;
+		width:100%;
+		vertical-align: middle;
+		font-weight: $font-normal;
+	}
+	.btn {
+		width:100%;
+		line-height: normal;
+	}
+}
+
+ /* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+	.searchbar * {
+		font-size:14px;
+	}
+	.searchbar {
+		ul {
+			list-style-type: none;
+			margin:0;
+			padding:0;
+			display: block;			
+		}
+		li {
+			display: block;
+			margin-bottom:5px;
+		}
+		li:nth-child(1), li:nth-child(2), li:nth-child(3), li:nth-child(4) {
+			width:100%;
+		}
+		li:nth-child(2) {
+			text-align: center;
+			color:white;
+			text-transform: uppercase;
+			font-weight: $font-semi-bold;
+		}
+		li, [role="button"], input[type="submit"], button, input[type="text"], .btn {
+			height:32px;
+		}
+	}    
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	.searchbar {
+		ul {
+			display: table;	
+			width:100%;		
+		}
+		li {
+			display: table-cell;
+			vertical-align: middle;
+			margin-bottom:0;
+		}
+		li:nth-child(1) {
+			width:30%;
+		}
+		li:nth-child(2) {
+			width:10%;
+		}
+		li:nth-child(3) {
+			width:40%;
+		}		
+		li:nth-child(4) {
+			width:20%;
+		}
+		li, [role="button"], input[type="submit"], button, input[type="text"], .btn {
+			height:40px;
+		}
+		.btn {
+			padding:10px 0 0 0;
+		}
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	.searchbar * {
+		font-size:16px;
+	}
+	.searchbar {		
+		li, [role="button"], input[type="submit"], button, input[type="text"], .btn {
+			height:50px;
+		}
+		.btn {
+			padding:13px 0 0 0;
+		}
+	}
+}
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+}

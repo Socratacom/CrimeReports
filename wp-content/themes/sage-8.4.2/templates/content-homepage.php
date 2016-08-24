@@ -3,32 +3,41 @@
 		<div class="vertical-center">
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-12">
+					<div class="col-sm-12 col-md-10 col-md-offset-1">
 						<h1 class="color-white text-center margin-bottom-30">Welcome to Crime Reports</h1>
-						<ul class="cta-list">
+						<!--<ul class="cta-list">
 							<li><a href="#" class="btn btn-success btn-lg">Explore the Map</a></li>						
 							<li><a href="#" class="btn btn-primary btn-lg">Agency Sign Up</a></li>
-						</ul>
+						</ul>-->
+						<h4 class="text-center color-white">Search over 500 departments by name, region, or zip code</h4>
+						<form class="searchbar">
+							<ul>					
+							<li><a href="#" class="btn btn-success">Explore the Map</a></li>
+							<li>or</li>
+							<li><input name="location" type="text" placeholder="Search CrimeReports" autocomplete="off" value=""></li>
+							<li><button type="submit">Search</button></li>				
+							</ul>
+						</form>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="search-bar">
+	<!--<div class="search-bar">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-10 col-sm-offset-1">
-					<h5 class="text-center color-white">Search over 500 departments by name, region, or zip code</h5>
-					<form>
-						<ul>
-							<li><input name="location" type="text" placeholder="Let's go." autocomplete="off" value=""></li>
-							<li><button type="submit">Search</button></li>
-						</ul>
-					</form>
+					<h5 class="text-center color-white">Search over 500 departments by name, region, or zip code</h5>		
+					<ul>					
+						<li>shit</li>
+						<li>or</li>
+						<li><input name="location" type="text" placeholder="Let's go." autocomplete="off" value=""></li>
+						<li><button type="submit">Search</button></li>						
+					</ul>
 				</div>
 			</div>
 		</div>
-	</div>
+	</div>-->
 	<div class="image" style="background-image:url(/wp-content/uploads/home-hero.jpg);"></div>
 </section>
 <section class="section-padding">
