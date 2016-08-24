@@ -17,7 +17,14 @@
 	<div class="search-bar">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-12">
+				<div class="col-sm-10 col-sm-offset-1">
+					<h5 class="text-center color-white">Search over 500 departments by name, region, or zip code</h5>
+					<form>
+						<ul>
+							<li><input name="location" type="text" placeholder="Let's go." autocomplete="off" value=""></li>
+							<li><button type="submit">Search</button></li>
+						</ul>
+					</form>
 				</div>
 			</div>
 		</div>
