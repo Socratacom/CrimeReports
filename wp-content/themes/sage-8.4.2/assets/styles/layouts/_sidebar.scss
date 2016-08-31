@@ -1,0 +1,62 @@
+.primary-nav, .secondary-nav {
+	ul {
+		list-style-type: none;
+		padding: 0;
+	}
+}
+.primary-nav {
+	ul {
+		margin:30px 0;
+		li {
+			margin-bottom:15px;
+			a {
+				font-size: 20px;
+				display: block;
+				font-weight: $font-normal;
+				color:$black;
+				letter-spacing: -1px;
+			}
+		}
+	}
+}
+.secondary-nav {
+	ul {
+		margin:0;
+		a {
+			font-size: 16px;
+			font-weight: $font-normal;
+			color:$grey;
+		}
+	}
+}
+.primary-nav, .secondary-nav {
+	a:hover {
+		color:$primary;
+	}
+}
+.cbp-spmenu {
+	background: white;
+	position: fixed;
+	padding:70px 30px 30px 30px;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+.cbp-spmenu-vertical {
+	width: 240px;
+	height: 100vh;
+	top: 0;
+	z-index: 20;
+}
+.cbp-spmenu-right {
+	right: -240px;
+}
+.cbp-spmenu-right.cbp-spmenu-open {
+	right: 0px;
+}
+.copyright {
+	position: absolute;
+	bottom:30px;
+	left:30px;
+	font-size:13px;
+}

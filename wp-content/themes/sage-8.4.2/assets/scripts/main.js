@@ -36,7 +36,7 @@
             window.addEventListener("scroll", callbackFunc);
             function callbackFunc() {
               var y = window.pageYOffset;
-              if (y > 150) {
+              if (y > 100) {
                 h.classList.add("scroll");
               } else {
                 h.classList.remove("scroll");

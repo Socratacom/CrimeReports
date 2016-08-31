@@ -9,11 +9,15 @@
   "dependencies": {
     "bootstrap-sass": "3.3.6",
     "matchHeight": "matchheight#^0.7.0",
-    "font-awesome": "fontawesome#^4.6.3"
+    "font-awesome": "fontawesome#^4.6.3",
+    "classie": "^1.0.1"
   },
   "overrides": {
     "matchHeight": {
       "main": "./dist/jquery.matchHeight-min.js"
+    },
+    "classie": {
+      "main": "./classie.js"
     },
     "bootstrap-sass": {
       "main": [
