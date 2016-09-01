@@ -73,7 +73,38 @@
 	background-color:white;
 	.col {
 		position: relative;
+		.thumb {
+			position:relative;
+			background-size:cover;
+			background-repeat:no-repeat;
+			background-position:center center;
+			filter: brightness(1.1) contrast(1.3);
+			opacity: .5;
+		}
+		.thumb:before, .thumb:after {
+			content: '';
+			height: 100%;
+			width: 100%;
+			top: 0;
+			left: 0;
+			position: absolute;
+		}
+		.thumb:before {
+			z-index: 2;
+			mix-blend-mode: multiply;
+			background-color:$black;
+		}
+		.play-button {
+			position: absolute;
+			top:0;
+			left:0;
+			z-index:100;
+			font-weight:$font-bold;
+			font-size:32px;
+			color:black;
+		}
 	}
+
 }
 .card, .horizontal-card .col {
 	.text {
@@ -87,7 +118,7 @@
 		padding:30px;
 	}
 }
-.card, .horizontal-card {
+.card {
 	.thumb {
 		position:relative;
 		background-size:cover;
@@ -126,6 +157,14 @@
 	.horizontal-card {
 		.thumb {
 			height:250px;
+		}
+	}
+	.listing {
+		border-bottom:$light-grey-3 solid 1px;
+		a {
+			display: block;
+			padding:5px 15px;
+			font-size: 14px;
 		}
 	}
 }

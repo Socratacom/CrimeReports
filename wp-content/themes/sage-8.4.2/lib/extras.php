@@ -32,3 +32,17 @@ function excerpt_more() {
 }
 add_filter('excerpt_more', __NAMESPACE__ . '\\excerpt_more');
 
+/**
+ * Match Height
+ */
+function match_height( $atts ) {
+  ob_start(); 
+  ?>
+  <script>jQuery(function(a){a(".match-height").matchHeight({byRow:!0})});</script>
+  <?php
+  $content = ob_get_contents();
+  ob_end_clean();
+  return $content;
+}
+add_shortcode('match-height', __NAMESPACE__ . '\\match_height');
+

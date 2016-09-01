@@ -9,6 +9,7 @@
 		</span>
 	</button>
 	<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="side-panel">
+		<div class="cr-bug"></div>
 		<a href="#" class="btn btn-primary btn-block">Subscribe</a>
 		<?php wp_nav_menu( array( 
 		'theme_location' => 'primary_navigation',

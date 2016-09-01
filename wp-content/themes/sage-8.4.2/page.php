@@ -7,6 +7,5 @@
 				</div>
 			</div>
 		</div>
-	</section>
-  
+	</section>  
 <?php endwhile; ?>
