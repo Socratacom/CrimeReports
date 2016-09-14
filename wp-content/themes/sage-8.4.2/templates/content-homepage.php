@@ -26,8 +26,14 @@
 		<div class="row no-gutters horizontal-card">
 			<div class="col-sm-6 col-md-7 col-lg-8">
 				<div class="col match-height">
-					<div class="thumb" style="background-image:url(http://placehold.it/760x428);"></div>
-					<div class="play-button">Play</div>
+					<div class="thumb" style="background-image:url(/wp-content/uploads/CR-map.jpg);"></div>
+					<div class="play-button">
+                        <div>
+                            <a href="#">
+                                <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
 				</div>	
 			</div>
 			<div class="col-sm-6 col-md-5 col-lg-4">
@@ -51,9 +57,9 @@
 				<h2 class="text-center section-title">Partner with Crime Reports</h2>
 			</div>
 			<div class="col-sm-6 col-lg-3">
-				<div class="card match-height">
-					<div class="thumb" style="background-image:url(http://placehold.it/560x315);">
-						<a href="/register-a-camera"></a>
+				<div class="card match-height">                    
+					<div>
+						<a href="/register-a-camera"><img src="/wp-content/uploads/camera.jpg" class="img-responsive"></a>
 					</div>
 					<div class="text">
 						<h5 class="margin-bottom-15">Register a Camera</h5>
@@ -66,8 +72,8 @@
 			</div>
 			<div class="col-sm-6 col-lg-3">
 				<div class="card match-height">
-					<div class="thumb" style="background-image:url(http://placehold.it/560x315);">
-						<a href="/submit-a-crime-tip"></a>
+					<div>
+						<a href="/submit-a-crime-tip"><img src="/wp-content/uploads/crime.jpg" class="img-responsive"></a>
 					</div>
 					<div class="text">
 						<h5 class="margin-bottom-15">Submit a Crime Tip</h5>
@@ -80,8 +86,8 @@
 			</div>
 			<div class="col-sm-6 col-lg-3">
 				<div class="card match-height">
-					<div class="thumb" style="background-image:url(http://placehold.it/560x315);">
-						<a href="/law-enforcement-agency"></a>
+					<div>
+						<a href="/law-enforcement-agency"><img src="/wp-content/uploads/agency.jpg" class="img-responsive"></a>
 					</div>
 					<div class="text">
 						<h5 class="margin-bottom-15">Law Enforcement Agency</h5>
@@ -94,8 +100,8 @@
 			</div>
 			<div class="col-sm-6 col-lg-3">
 				<div class="card match-height">
-					<div class="thumb" style="background-image:url(http://placehold.it/560x315);">
-						<a href="/data-researchers"></a>
+					<div>
+						<a href="/data-researchers"><img src="/wp-content/uploads/research.jpg" class="img-responsive"></a>
 					</div>
 					<div class="text">
 						<h5 class="margin-bottom-15">Data Researchers</h5>
