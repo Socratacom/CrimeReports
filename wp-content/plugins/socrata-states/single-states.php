@@ -2,7 +2,7 @@
 <div class="text">
 <div class="container">
 <div class="row">
-<div class="col-sm-6">
+<div class="col-sm-12">
 <h1 class="text-reverse margin-bottom-0 text-uppercase"><?php the_title(); ?></h1>
 </div>
 </div>
