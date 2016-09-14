@@ -243,7 +243,12 @@
     mix-blend-mode: difference;
     background: rgba($primary, 0.3);
 }
-
+.feature-matrix {
+    td:nth-child(2) {
+        border-left:$light-grey-3 solid 1px;
+        border-right:$light-grey-3 solid 1px;
+    }
+}
 
 @media only screen and (min-width : 320px) {	
 	.home {
