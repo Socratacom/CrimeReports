@@ -1,6 +1,15 @@
-footer * {
-	color:$primary-alt-2;
+footer .download-apps a img {
+    vertical-align: top;
+    height: 5rem;
 }
+footer .download-apps a {
+    display: inline-block;
+    vertical-align: top;
+}
+footer .download-apps a.appstore-link {
+    margin-right: 1.5rem;
+}
+
 footer {
 	ul {
 		list-style-type: none;
